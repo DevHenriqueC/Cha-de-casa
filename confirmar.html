@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmar Presenca</title>
+    <link rel="icon" href="img/casa.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html"><div class="logo"><img class="logo1" src="img/home.png" alt="home"></div></a>
+        <ul class="nav-links-desktop">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="convite.html">Convite</a></li>
+          <li><a href="op.html">Opcoes de presentes</a></li>
+  
+        </ul>
+        <div class="mobile-menu" id="mobileMenu">
+          <button class="close" id="closeButton">
+            <img class="iburguer" src="img/hamburger.png" alt="hamburger">
+          </button>
+          <ul class="nav-links-mobile">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="convite.html">Convite</a></li>
+          <li><a href="op.html">Opcoes de presentes</a></li>
+          </ul>
+        </div>
+        <button class="hamburger" id="hamburgerButton">
+          <img class="iburguer" src="img/hamburger.png" alt="hamburger">
+        </button>
+      </nav>
+      <div class="conf">
+        <div class="confirm">
+          <h1>Confirmação de Presença</h1>
+            <form class="formConfirmacao" method="POST" action="https://formsubmit.co/hcouto220@gmail.com">
+              <label for="nome">Seu Nome:</label><br>
+              <input type="text" id="nome" name="nome" required><br><br>
+  
+              <label for="email">Seu E-mail:</label><br>
+              <input type="email" id="email" name="email" required><br><br>
+
+              <label for="presenca">Você irá comparecer?</label><br>
+              <input type="radio" id="sim" name="presenca" value="Sim" required> Sim
+              <input type="radio" id="nao" name="presenca" value="Não" required> Não<br><br>
+            
+              <button type="submit">Confirmar Presença</button>
+           </form>
+        </div>
+      </div>
+</body>
+</html>
